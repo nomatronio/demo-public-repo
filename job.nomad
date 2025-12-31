@@ -20,7 +20,7 @@ job "nginx-nomatron-job" {
       }
 
       resources {
-        cpu    = 50
+        cpu    = 2
         memory = 64
       }
     }
