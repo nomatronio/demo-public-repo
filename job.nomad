@@ -1,4 +1,4 @@
-job "nginx-nomatron-test" {
+job "nginx-nomatron" {
   datacenters = ["dc1"]
   type        = "service"
 
