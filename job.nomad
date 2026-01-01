@@ -7,8 +7,7 @@ job "nginx-nomatron-job" {
 
     network {
       port "http" {
-        from = 80
-        to   = 80
+        static   = 80
       }
     }
 
