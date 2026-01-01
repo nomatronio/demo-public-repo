@@ -7,7 +7,8 @@ job "nginx-nomatron-job" {
 
     network {
       port "http" {
-        to = 80
+        from = 8080
+        to   = 80
       }
     }
 
@@ -21,7 +22,7 @@ job "nginx-nomatron-job" {
 
       resources {
         cpu    = 2
-        memory = 32
+        memory =16
       }
     }
   }
