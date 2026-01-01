@@ -7,7 +7,7 @@ job "nginx-nomatron-job" {
 
     network {
       port "http" {
-        from = 8080
+        from = 80
         to   = 80
       }
     }
