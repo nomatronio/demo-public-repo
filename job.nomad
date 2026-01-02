@@ -3,7 +3,7 @@ job "nginx-nomatron-job" {
   type        = "service"
 
   group "web" {
-    count = 1
+    count = 2
 
     network {
       port "http" {
@@ -13,6 +13,7 @@ job "nginx-nomatron-job" {
 
     task "nginx" {
       driver = "docker"
+
 
       config {
         image = "nginx:alpine"
