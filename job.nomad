@@ -3,7 +3,7 @@ job "nginx-nomatron-job" {
   type        = "service"
 
   group "web" {
-    count = 0
+    count = 1
 
     network {
       port "http" {
