@@ -7,7 +7,7 @@ job "nginx-nomatron-job" {
 
     network {
       port "http" {
-        static   = NOMATRON_VAR_app_port
+        static   = ${NOMATRON_VAR_app_port}
       }
     }
 
