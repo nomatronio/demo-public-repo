@@ -1,4 +1,4 @@
-job "nginx-nomatron-job" {
+job "nginx-nomatron-template" {
   datacenters = ["dc1"]
   type        = "service"
 
@@ -21,7 +21,7 @@ job "nginx-nomatron-job" {
       }
 
       resources {
-        cpu    = 1
+        cpu    = 2
         memory = 11
       }
     }
